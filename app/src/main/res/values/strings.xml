@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">themable-app</string>
+
+    <string name="toggle_theme">Toggle theme</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="keyline">16dp</dimen>
+    <dimen name="keyline_content">72dp</dimen>
+
+    <dimen name="elevation_toolbar">8dp</dimen>
+
+</resources>
