@@ -7,4 +7,42 @@
 
     <include layout="@layout/toolbar" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="?colorPrimary"
+        android:elevation="@dimen/elevation_toolbar"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/keyline_content"
+        android:paddingRight="@dimen/keyline"
+        android:text="Lorem Ipsum"
+        android:textAppearance="@style/Text.Display1.Inverse" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyline"
+        android:paddingLeft="@dimen/keyline"
+        android:paddingRight="@dimen/keyline"
+        android:text="Lorem ipsum dolor sit amet, ne sonet petentium suscipiantur eos, te mea liber nemore omnium, quem singulis cum ex. At summo causae vel. Audiam sanctus ius ut, eu vivendo principes duo. Malorum alterum eum no."
+        android:textAppearance="@style/Text.Body1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyline"
+        android:paddingLeft="@dimen/keyline"
+        android:paddingRight="@dimen/keyline"
+        android:text="Lorem ipsum dolor sit amet, ne sonet petentium suscipiantur eos, te mea liber nemore omnium, quem singulis cum ex. At summo causae vel. Audiam sanctus ius ut, eu vivendo principes duo. Malorum alterum eum no."
+        android:textAppearance="@style/Text.Body2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/keyline"
+        android:layout_marginRight="@dimen/keyline"
+        android:layout_marginTop="@dimen/keyline"
+        android:backgroundTint="?colorAccent"
+        android:text="BUTTON" />
+
 </LinearLayout>

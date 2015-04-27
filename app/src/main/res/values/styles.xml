@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Text -->
-    <!-- ======================================================================================= -->
-
-    <style name="Text" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">14sp</item>
-        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
-    </style>
-
     <style name="Text.Body1" parent="TextAppearance.AppCompat.Body1">
         <item name="android:textSize">14sp</item>
         <item name="fontPath">fonts/Roboto-Regular.ttf</item>
@@ -29,6 +21,10 @@
 
     <style name="Text.Display1" parent="TextAppearance.AppCompat.Display1">
         <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+    <style name="Text.Display1.Inverse" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
     </style>
 
     <style name="Text.Display2" parent="TextAppearance.AppCompat.Display2">

@@ -7,7 +7,6 @@ import android.view.MenuItem;
 
 import com.themableapp.R;
 import com.themableapp.ui.common.BaseActivity;
-import com.themableapp.utils.UserPrefs;
 
 
 public class MainActivity extends BaseActivity {
@@ -27,9 +26,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_toggle_theme) {
-            UserPrefs userPrefs = getUserPrefs();
-            userPrefs.setIsDarkTheme(!userPrefs.isDarkTheme());
-            UserPrefs.put(this, UserPrefs.KEY, userPrefs);
+            setIsOtherTheme(!isOtherTheme());
             startActivity(new Intent(this, MainActivity.class));
             finish();
             return true;

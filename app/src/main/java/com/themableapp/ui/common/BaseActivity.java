@@ -1,26 +1,21 @@
 package com.themableapp.ui.common;
 
 import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.themableapp.R;
-import com.themableapp.utils.ThemeUtils;
-import com.themableapp.utils.UserPrefs;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public abstract class BaseActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(isOtherTheme() ? R.style.AppTheme_Other : R.style.AppTheme);
         super.onCreate(savedInstanceState);
-        setTheme(getUserPrefs().isDarkTheme() ? R.style.AppTheme_Other : R.style.AppTheme);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(ThemeUtils.getColor(this, R.attr.colorPrimaryDark));
-        }
     }
 
     @Override
@@ -54,11 +49,11 @@ public abstract class BaseActivity extends ActionBarActivity {
         }
     }
 
-    protected UserPrefs getUserPrefs() {
-        UserPrefs userPrefs = UserPrefs.get(this, UserPrefs.KEY, UserPrefs.class);
-        if (userPrefs == null) {
-            userPrefs = new UserPrefs();
-        }
-        return userPrefs;
+    protected boolean isOtherTheme() {
+        return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("isOtherTheme", false);
+    }
+
+    protected void setIsOtherTheme(boolean isOtherTheme) {
+        PreferenceManager.getDefaultSharedPreferences(this).edit().putBoolean("isOtherTheme", isOtherTheme).commit();
     }
 }

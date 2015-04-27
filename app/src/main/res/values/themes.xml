@@ -14,29 +14,11 @@
     </style>
 
     <style name="AppTheme.Other">
-        <item name="colorPrimary">#c00</item>
-        <item name="colorPrimaryDark">#0c0</item>
-        <item name="colorAccent">#00c</item>
-        <item name="colorControlHighlight">#840000cc</item>
-
-        <item name="android:windowBackground">@color/window_background_dark</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
-
-    <style name="ToolbarTheme">
-        <item name="android:textColorPrimary">?android:textColorPrimaryInverse</item>
-        <item name="colorControlNormal">?android:textColorPrimaryInverse</item>
-    </style>
-
-    <style name="ToolbarStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">?actionBarSize</item>
-        <item name="android:minHeight">?actionBarSize</item>
-        <item name="android:background">?colorPrimary</item>
-        <item name="android:elevation" tools:ignore="NewApi">@dimen/elevation_toolbar</item>
-        <item name="contentInsetStart">@dimen/keyline_content</item>
-        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
-        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="colorPrimary">#9C27B0</item>
+        <item name="colorPrimaryDark">#7B1FA2</item>
+        <item name="colorAccent">#FFC107</item>
+        <item name="colorControlHighlight">#84FFC107</item>
+        <item name="android:windowBackground">@color/window_background_other</item>
     </style>
 
 </resources>
